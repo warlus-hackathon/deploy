@@ -26,7 +26,7 @@ services:
       - ./.data/minio:/data
 
   backend:
-    build: .
+    build: ghcr.io/warlus-hackathon/backend:main
     env_file:
       - .env
     ports:
@@ -35,7 +35,7 @@ services:
       - warlus
 
   frontend:
-      build: .
+      build: ghcr.io/warlus-hackathon/frontend:main
       env_file:
         - .env
       ports:
@@ -44,7 +44,7 @@ services:
         - warlus
         
   worker:
-    build: .
+    build: ghcr.io/warlus-hackathon/worker:main
     env_file:
       - .env
     ports:
