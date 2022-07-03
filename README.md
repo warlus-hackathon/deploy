@@ -16,7 +16,7 @@ docker pull ghcr.io/warlus-hackathon/worker:v0.1.1
 ```
 or
 ```bash
-docker pull ghcr.io/warlus-hackathon/backend:main & docker pull ghcr.io/warlus-hackathon/frontend:main & docker pull ghcr.io/warlus-hackathon/worker:main
+docker pull ghcr.io/warlus-hackathon/backend:v0.1.0 & docker pull ghcr.io/warlus-hackathon/frontend:v0.1.0 & docker pull ghcr.io/warlus-hackathon/worker:v0.1.1
 ```
 ## Setting up environment variables
 For the service to work correctly, you need to correctly set the environment variables in the .env file. Example:
@@ -62,7 +62,7 @@ docker-compose exec backend bash
 python -m backend.models
 exit
 ```
-Tables created. This steps you need do only in first start, next, the tables will be in containers their re-creation will not be required. But if you delete "db" container, you need repeat this way.\
+Tables created. This steps you need do only in first start, next, the tables will be in containers their re-creation will not be required. But if you delete "db" container, you need repeat this way.
 
 Now we start other containers
 ```bash
