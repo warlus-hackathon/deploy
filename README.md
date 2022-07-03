@@ -1,4 +1,8 @@
 # Start service
+Clone this repo
+```bash
+git clone https://github.com/warlus-hackathon/deploy.git
+```
 To start the service, you need to download docker images. First of all, log in to access GitHub Packages
 
 ```bash
