@@ -26,7 +26,7 @@ services:
       - ./.data/minio:/data
 
   backend:
-    image: ghcr.io/warlus-hackathon/backend:main
+    image: ghcr.io/warlus-hackathon/backend:v0.1.0
     env_file:
       - .env
     ports:
@@ -44,11 +44,9 @@ services:
         - warlus
         
   worker:
-    image: ghcr.io/warlus-hackathon/worker:main
+    image: ghcr.io/warlus-hackathon/worker:v0.1.1
     env_file:
-      - .env
-    ports:
-      - 8080:8080
+      - .env    
     networks:
       - warlus
 
